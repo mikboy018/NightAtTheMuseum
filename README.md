@@ -27,6 +27,7 @@ Task List:
 	E) Monster/Sprite Gun on Camera 
 	F) Switching rooms
 	G) Floor - based navigation
+	H) Video Playing on Reticle Click
 
 4) Develop Canvas Objects for:
 	A) Exhibit Start
