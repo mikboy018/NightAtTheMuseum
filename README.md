@@ -3,7 +3,7 @@ Project 5 - Udacity VR Nanodegree
 By: Mike Boyer
 
 Task List:
-1) Create the following scenes, using images saved to Google Drive:
+1) Create the following scenes, using images saved to Google Drive for textures:
 	A) Gaming Industry
 	B) VR/AR CAD
 	C) Movie Theaters/Occulus Room App
@@ -15,8 +15,8 @@ Task List:
 	A) Serious Sam VR Gameplay
 	B) Keep Talking and Nobody Explodes VR
 	C) Rec Room Multiplayer VR
-	D) AR Hololens Applications - Complete
-	E) VR/AR CAD
+	D) AR Hololens Applications : Have, just need to convert
+	E) VR/AR CAD 
 	F) Medical / Systems Training
 	
 3) Develop Scripts for:
@@ -25,8 +25,8 @@ Task List:
 	C) Storing data between scenes (objects collected/areas visited)
 	D) Collecting objects/enabling videos
 	E) Monster/Sprite Gun on Camera 
-	F) Switching rooms
-	G) Floor - based navigation
+	F) Switching rooms / keeping scores
+X	G) Floor - based navigation : Ground Raycasting added 27 JUN 17
 	H) Video Playing on Reticle Click
 
 4) Develop Canvas Objects for:
@@ -35,10 +35,7 @@ Task List:
 
 5) Develop animations for:
 	A) Key Floating
-	B) BluePrint - flying to workbench
-	C) MovieReel - flying to movieplayer objects
-	D) VR/AR Headset - flying to desk
-	E) Medical device - flying to operating table
+	B) Monster attack
 
 6) Find sounds for:
 	A) Game room - growling sounds
@@ -46,11 +43,16 @@ Task List:
 	
 7) Screenshots for:
 	A) Game room - Elite Dangerous
-	B) Game room - Accounting
+	B) Game room - Rick and Morty
 	
 
 
-
+27 JUN 17 -  I need to be better about updating this file. I've managed to work out Ground Raycasting via the Udacity-supplied
+content from Project 4 studies. Next, I plan to gather assets for the other rooms. At this time, I still need to record game video
+and locate content for some of the other rooms. I plan to use the key from Project 3 with an animation to rotate it. I also need
+to import my homemade script for scores, and determine how to maintain scores between levels. This is a bit out of scope for this 
+project, but is useful for future projects. Also, I love the game Accounting, but I just got Rick and Morty VR on sale, and will
+be recording screenshots from that, instead. I bet it will be more polished/complete, given its a paid-for game.
 
 23 JUN 17 -
 After some trial and error (and of course following instructions), I think I've finally figured out the GitHub Desktop
