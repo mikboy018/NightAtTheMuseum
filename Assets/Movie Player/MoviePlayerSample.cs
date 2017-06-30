@@ -66,8 +66,8 @@ Implementation:
 public class MoviePlayerSample : MonoBehaviour
 {
 	public string 	movieName = string.Empty;
-    public bool     videoPaused = false;
-    private bool    videoPausedBeforeAppPause = false;
+    public bool     videoPaused = true;
+    private bool    videoPausedBeforeAppPause = true;
 
     private string	mediaFullPath = string.Empty;
 	private bool	startedVideo = false;
@@ -212,7 +212,7 @@ public class MoviePlayerSample : MonoBehaviour
 	{
 		yield return null; // delay 1 frame to allow MediaSurfaceInit from the render thread.
 
-		if (!startedVideo)
+		if (!startedVideo && !videoPaused)
 		{
 			Debug.Log("Mediasurface DelayedStartVideo");
 
@@ -256,7 +256,7 @@ public class MoviePlayerSample : MonoBehaviour
 				{
 					audioEmitter.Play();
 				}
-			}
+			} 
 		}
 #endif
 	}

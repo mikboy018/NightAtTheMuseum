@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class Artifact : MonoBehaviour
 {
     //Create a reference to the KeyPoofPrefab and Door
@@ -10,6 +11,9 @@ public class Artifact : MonoBehaviour
     //public Door exitDoor;
     public AudioClip keySound;
     public bool keyCollected = false;
+    public float speed = 10f;
+    public Transform target;
+    
     //Placeholder for Door Script
 
 
@@ -20,7 +24,15 @@ public class Artifact : MonoBehaviour
         // ^-- exactly what I was planning!
         //I'm using numbers here as I only plan to have one key-like object... I'd totally make my 
         //own Vector3 object for reusability had it been required...
-        transform.position = new Vector3(19.02f, 3.91f + Mathf.Sin(Time.time * 2.2f), 14.57f);
+        //Trying to implement a rotation AND height change
+        transform.position = new Vector3(28.7f, -.68f + Mathf.Sin(Time.time * 1.85f)*.15f, -12.61f);
+        transform.Rotate(Vector3.up, speed * Time.deltaTime);
+       // Vector3 heightChange = new Vector3(target.position.x, 3.91f + Mathf.Sin(Time.time * 1.2f));
+        //transform.position = heightChange;
+        //Vector3 myInitialVector = new Vector3(19.02f, 3.91f + Mathf.Sin(Time.time * 1.2f), 14.57f);
+        //var myRotationQuat = Quaternion.AngleAxis(10, Vector3.right);
+        //Vector3 myRotatedVector = myRotationQuat * myInitialVector;
+        //transform.position = myRotatedVector;
     }
 
 	public void OnKeyClicked()

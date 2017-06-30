@@ -4,7 +4,7 @@ By: Mike Boyer
 
 Task List:
 1) Create the following scenes, using images saved to Google Drive for textures:
-	A) Gaming Industry
+X	A) Gaming Industry : Mostly complete, requires some extra features (video play control, etc.) 29 JUN 17
 	B) VR/AR CAD
 	C) Movie Theaters/Occulus Room App
 	D) AR Specific Applications
@@ -34,7 +34,7 @@ X	G) Floor - based navigation : Ground Raycasting added 27 JUN 17
 	B) Exhibit Credits
 
 5) Develop animations for:
-	A) Key Floating
+X	A) Key Floating : Done 29 JUN 17
 	B) Monster attack
 
 6) Find sounds for:
@@ -45,7 +45,10 @@ X	G) Floor - based navigation : Ground Raycasting added 27 JUN 17
 	A) Game room - Elite Dangerous
 	B) Game room - Rick and Morty
 	
-
+29 JUN 17 - I decided to work on adding the blue key. I wanted it to change height similar to project 3, but also rotate quickly.
+After some playing around, I realized a simple transform.rotate and transform.position line was all I needed. Ended up with a pretty
+nice animation. I've also fixed the autoplay and pointer control functions for the movie screen prefab. Now, I just need to have it
+check to see if the artifact is collected before the player can play.
 
 27 JUN 17 -  I need to be better about updating this file. I've managed to work out Ground Raycasting via the Udacity-supplied
 content from Project 4 studies. Next, I plan to gather assets for the other rooms. At this time, I still need to record game video
