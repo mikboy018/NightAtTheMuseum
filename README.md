@@ -45,6 +45,9 @@ X	A) Key Floating : Done 29 JUN 17
 	A) Game room - Elite Dangerous
 	B) Game room - Rick and Morty
 	
+1 JUL 17 - Built the main scene, importing free assets from unity store (Industrial Textures - Arkham Interactive).
+Need to add a script that says on door click - go to respective scene.
+	
 29 JUN 17 - I decided to work on adding the blue key. I wanted it to change height similar to project 3, but also rotate quickly.
 After some playing around, I realized a simple transform.rotate and transform.position line was all I needed. Ended up with a pretty
 nice animation. I've also fixed the autoplay and pointer control functions for the movie screen prefab. Now, I just need to have it
