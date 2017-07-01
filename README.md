@@ -22,7 +22,7 @@ X	A) Gaming Industry : Mostly complete, requires some extra features (video play
 3) Develop Scripts for:
 	A) Credits room - implement the X of X script from the maze project
 	B) Exiting Game
-	C) Storing data between scenes (objects collected/areas visited)
+X	C) Storing data between scenes (objects collected/areas visited) : Done 1 JUL
 	D) Collecting objects/enabling videos
 	E) Monster/Sprite Gun on Camera 
 	F) Switching rooms / keeping scores
@@ -46,7 +46,9 @@ X	A) Key Floating : Done 29 JUN 17
 	B) Game room - Rick and Morty
 	
 1 JUL 17 - Built the main scene, importing free assets from unity store (Industrial Textures - Arkham Interactive).
-Need to add a script that says on door click - go to respective scene.
+Added script to change between levels. Need to implement artifact collection (done), video unlocking, and counting (done). Once this
+is complete, I will finish gathering videos and add the remaining scenes. Last but not least should be the special feature
+I have planned for the Game Industry scene (3E).
 	
 29 JUN 17 - I decided to work on adding the blue key. I wanted it to change height similar to project 3, but also rotate quickly.
 After some playing around, I realized a simple transform.rotate and transform.position line was all I needed. Ended up with a pretty

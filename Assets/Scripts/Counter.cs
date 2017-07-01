@@ -15,9 +15,9 @@ using UnityEngine;
  * 27 JUN 2017 - Mike Boyer
  **/
 
-public class ArtifactCounter : MonoBehaviour
+public class Counter : MonoBehaviour
 {
-    public int keyCount = 0;
+    public int keyCount;
     public int blueprintCount = 0;
     public int reelCount = 0;
     public int techManCount = 0;
@@ -28,7 +28,7 @@ public class ArtifactCounter : MonoBehaviour
     {
         int totalVisitedCounter = keyCount + blueprintCount + reelCount + techManCount + medDeviceCount;
         return totalVisitedCounter;
-}
+    }
     
 }
   

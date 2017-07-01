@@ -8,5 +8,9 @@ public class ChangeScene : MonoBehaviour {
 	public void GoToScene()
     {
         SceneManager.LoadScene(sceneName);
+        DontDestroyOnLoad(GameObject.Find("MasterLogic"));
+        //Checking to see if master logic ever gets destroyed...
+        //GameObject.Find("MasterLogic").GetComponent<Counter>().keyCount++;
+        //Debug.Log("Key Count is " + GameObject.Find("MasterLogic").GetComponent<Counter>().keyCount);
     }
 }
