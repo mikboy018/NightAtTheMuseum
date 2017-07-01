@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -12,6 +13,13 @@ public class Artifact : MonoBehaviour
     public AudioClip sound;
     public bool collected = false;
     public float speed = 10f;
+    public Scene scene;
+
+    private void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
+    
         
   
     public void Update()
@@ -43,14 +51,21 @@ public class Artifact : MonoBehaviour
         // exitDoor.Unlock();
         // Set the Key Collected Variable to true
         collected = true;
-        GameObject.Find("SceneLogic").GetComponent<UnlockScript>().ArtifactCollected();
-        // Destroy the key. Check the Unity documentation on how to use Destroy
+        string title = scene.name;
+                if (title == "GameIndustry" & GameObject.Find("MasterLogic").GetComponent<Counter>().gamesDone < 1)
+        {
+            GameObject.Find("MasterLogic").GetComponent<Counter>().gamesDone++;
+            GameObject.Find("SceneLogic").GetComponent<UnlockScript>().ArtifactCollected();
+            //GameObject.Find("SceneLogic").GetComponent<GameIndustryComplete>().gameIndustryDone = true;
+            // Destroy the key. Check the Unity documentation on how to use Destroy
+            
+            //next ill figureout how to have a counter for keys and coins
+
+            //GameObject.Find("MasterLogic").GetComponent<Counter>().count++;
+        }
         Object.DestroyImmediate(this.gameObject, true);
         //print("Removed key!);
         RemoveKey();
-        //next ill figureout how to have a counter for keys and coins
-        
-        GameObject.Find("MasterLogic").GetComponent<Counter>().count++;
     }
     public IEnumerator RemoveKey()
     {

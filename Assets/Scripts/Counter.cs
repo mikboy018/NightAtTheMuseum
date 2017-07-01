@@ -18,11 +18,17 @@ using UnityEngine;
 public class Counter : MonoBehaviour
 {
     public int count;
+    public int gamesDone;
     
     
     //Return the total number of visitors
     public int GetTotalVisted()
     {
+        if(GameObject.Find("GameIndustryLogic").GetComponent<GameIndustryComplete>().gameIndustryDone == true && gamesDone < 1)
+        {
+            gamesDone++;
+        }
+        count = gamesDone;
         return count;
     }
     
