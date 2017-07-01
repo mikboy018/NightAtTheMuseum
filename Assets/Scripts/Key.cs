@@ -41,7 +41,7 @@ public class Key : MonoBehaviour
         //print("Removed key!);
         RemoveKey();
         //next ill figureout how to have a counter for keys and coins
-        GameObject.Find("Counter").GetComponent<Counter>().keyCount++;
+        GameObject.Find("Counter").GetComponent<Counter>().count++;
     }
     public IEnumerator RemoveKey()
     {

@@ -15,9 +15,16 @@ public class MoviePlayerControl : MonoBehaviour {
     // Invert play/pause state
     public void TogglePaused()
     {
-        bool newPauseState = !moviePlayerSample.videoPaused;
-        moviePlayerSample.SetPaused(newPauseState);
-        SetPlayButtonText(newPauseState);
+        if (GameObject.Find("SceneLogic").GetComponent<UnlockScript>().collectionTrue == true)
+        {
+            bool newPauseState = !moviePlayerSample.videoPaused;
+            moviePlayerSample.SetPaused(newPauseState);
+            SetPlayButtonText(newPauseState);
+        }
+        else
+        {
+            Debug.Log("Find the key first!");
+        }
     }
 
     void SetPlayButtonText(bool state)

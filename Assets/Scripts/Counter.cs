@@ -17,17 +17,13 @@ using UnityEngine;
 
 public class Counter : MonoBehaviour
 {
-    public int keyCount;
-    public int blueprintCount = 0;
-    public int reelCount = 0;
-    public int techManCount = 0;
-    public int medDeviceCount = 0;
+    public int count;
+    
     
     //Return the total number of visitors
-    public int GetTotalVisted(int keyCount, int blueprintCount, int reelCount, int techmanCount, int medDeviceCount)
+    public int GetTotalVisted()
     {
-        int totalVisitedCounter = keyCount + blueprintCount + reelCount + techManCount + medDeviceCount;
-        return totalVisitedCounter;
+        return count;
     }
     
 }
