@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using RenderHeads.Media.AVProVideo;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class UnlockScript : MonoBehaviour {
+public class UnlockScript : MonoBehaviour
+{
     public bool collectionTrue;
     public Scene scene;
     public string title;
@@ -12,9 +15,18 @@ public class UnlockScript : MonoBehaviour {
         scene = SceneManager.GetActiveScene();
         title = scene.name;
     }
+    
     private void Update()
     {
         ArtifactCollected();
+        GameObject[] gameObjectArray = GameObject.FindGameObjectsWithTag("PlayButton");
+        if (collectionTrue == true)
+        {
+            foreach (GameObject go in gameObjectArray)
+            {
+                go.GetComponent<Button>().interactable = true;
+            }
+        }
     }
 
     public bool ArtifactCollected()
@@ -39,9 +51,16 @@ public class UnlockScript : MonoBehaviour {
         {
             collectionTrue = true;
         }
-        
+
         return collectionTrue;
     }
-    
-    
+
+    public void playMovie()
+    {
+        MediaPlayer mp = this.GetComponentInChildren<MediaPlayer>();
+        mp.Play();
+
+        
+    }
 }
+  
