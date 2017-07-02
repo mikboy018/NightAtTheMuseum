@@ -57,6 +57,7 @@ Blueprint taken from: https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_statio
 Movie Camera taken from: https://free3d.com/3d-model/film-camera-39825.html
 RayGun taken from: https://www.turbosquid.com/3d-models/free-3ds-mode-gun-extraterrestrial/620172
 AR Goggles taken from: https://www.turbosquid.com/3d-models/free-3ds-model-red-baron-goggles/441112
+Book taken from: https://www.turbosquid.com/3d-models/free-c4d-model-book/549283
 
 	
 29 JUN 17 - I decided to work on adding the blue key. I wanted it to change height similar to project 3, but also rotate quickly.
