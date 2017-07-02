@@ -49,7 +49,9 @@ X	B) Game room - background music : Done and fixed 1 JUL 17
 Added script to change between levels. Need to implement artifact collection (done), video unlocking (done), and counting (done). Once this
 is complete, I will finish gathering videos and add the remaining scenes. Last but not least should be the special feature
 I have planned for the Game Industry scene (3E). I did notice one bug... if I re-enter a room, the artifact re-appears.
-Slowly re-working throught the logic, I realized it wise to keep all master variables with master logic.
+Slowly re-working throught the logic, I realized it wise to keep all master variables with master logic. I also made it
+so that you only have to grab an artifact once. After all of this, I made a copies of the Movies scene, as it made a great
+baseline for the rest of the scenes. Now, I just need videos, and to drop in the new artifacts.
 
 Blueprint taken from: https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg
 Movie Camera taken from: https://free3d.com/3d-model/film-camera-39825.html

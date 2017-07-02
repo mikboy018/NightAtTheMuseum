@@ -52,19 +52,29 @@ public class Artifact : MonoBehaviour
         // Set the Key Collected Variable to true
         collected = true;
         string title = scene.name;
-                if (title == "GameIndustry" & GameObject.Find("MasterLogic").GetComponent<Counter>().gamesDone < 1)
+        if (title == "GameIndustry" & GameObject.Find("MasterLogic").GetComponent<Counter>().gamesDone < 1)
         {
             GameObject.Find("MasterLogic").GetComponent<Counter>().gamesDone++;
-            GameObject.Find("SceneLogic").GetComponent<UnlockScript>().ArtifactCollected();
-            //GameObject.Find("SceneLogic").GetComponent<GameIndustryComplete>().gameIndustryDone = true;
-            // Destroy the key. Check the Unity documentation on how to use Destroy
-            
-            //next ill figureout how to have a counter for keys and coins
-
-            //GameObject.Find("MasterLogic").GetComponent<Counter>().count++;
         }
+        if (title == "Movies" & GameObject.Find("MasterLogic").GetComponent<Counter>().moviesDone < 1)
+        {
+            GameObject.Find("MasterLogic").GetComponent<Counter>().moviesDone++;
+        }
+        if (title == "AR" & GameObject.Find("MasterLogic").GetComponent<Counter>().arDone < 1)
+        {
+            GameObject.Find("MasterLogic").GetComponent<Counter>().arDone++;
+        }
+        if (title == "CAD" & GameObject.Find("MasterLogic").GetComponent<Counter>().cadDone < 1)
+        {
+            GameObject.Find("MasterLogic").GetComponent<Counter>().cadDone++;
+        }
+        if (title == "Education" & GameObject.Find("MasterLogic").GetComponent<Counter>().eduDone < 1)
+        {
+            GameObject.Find("MasterLogic").GetComponent<Counter>().eduDone++;
+        }
+        GameObject.Find("SceneLogic").GetComponent<UnlockScript>().ArtifactCollected();
         Object.DestroyImmediate(this.gameObject, true);
-        //print("Removed key!);
+        
         RemoveKey();
     }
     public IEnumerator RemoveKey()
