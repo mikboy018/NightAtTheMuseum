@@ -5,26 +5,26 @@ By: Mike Boyer
 Task List:
 1) Create the following scenes, using images saved to Google Drive for textures:
 X	A) Gaming Industry : Mostly complete, requires some extra features (video play control, etc.) 29 JUN 17
-	B) VR/AR CAD
-	C) Movie Theaters/Occulus Room App
-	D) AR Specific Applications
-	E) Medical / Systems Training
-	F) Credits / Exit Room
+X	B) VR/AR CAD
+X	C) Movie Theaters/Occulus Room App
+X	D) AR Specific Applications
+X	E) Medical / Systems Training
+X	F) Credits / Exit Room
 	
 2) Develop/Find/Convert to *.ogv and *.mp4 videos for the following subjects:
-	A) Serious Sam VR Gameplay
-	B) Keep Talking and Nobody Explodes VR
-	C) Rec Room Multiplayer VR
-	D) AR Hololens Applications : Have, just need to convert
-	E) VR/AR CAD 
-	F) Medical / Systems Training
+X	A) Serious Sam VR Gameplay
+X	B) Keep Talking and Nobody Explodes VR : N/a
+X	C) Rec Room Multiplayer VR
+X	D) AR Hololens Applications : Have, just need to convert
+X	E) VR/AR CAD 
+X	F) Medical / Systems Training
 	
 3) Develop Scripts for:
 X	A) Credits room - implement the X of X script from the maze project : Added to main scene - DONE 1 JUL 17
-	B) Exiting Game
+X	B) Exiting Game : Done 1 Jul 17
 X	C) Storing data between scenes (objects collected/areas visited) : Done 1 JUL
 X	D) Collecting objects/enabling videos
-	E) Monster/Sprite Gun on Camera 
+X	E) Monster/Sprite Gun on Camera  : n/a
 X	F) Switching rooms / keeping scores
 X	G) Floor - based navigation : Ground Raycasting added 27 JUN 17
 X	H) Video Playing on Reticle Click
@@ -35,15 +35,12 @@ X	B) Exhibit Credits - n/a
 
 5) Develop animations for:
 X	A) Key Floating : Done 29 JUN 17
-	B) Monster attack
+X	B) Monster attack : n/a
 
 6) Find sounds for:
-	A) Game room - growling sounds
+X	A) Game room - growling sounds : n/a
 X	B) Game room - background music : Done and fixed 1 JUL 17
 	
-7) Screenshots for:
-	A) Game room - Elite Dangerous
-	B) Game room - Rick and Morty
 	
 1 JUL 17 - Built the main scene, importing free assets from unity store (Industrial Textures - Arkham Interactive).
 Added script to change between levels. Need to implement artifact collection (done), video unlocking (done), and counting (done). Once this
@@ -51,7 +48,7 @@ is complete, I will finish gathering videos and add the remaining scenes. Last b
 I have planned for the Game Industry scene (3E). I did notice one bug... if I re-enter a room, the artifact re-appears.
 Slowly re-working throught the logic, I realized it wise to keep all master variables with master logic. I also made it
 so that you only have to grab an artifact once. After all of this, I made a copies of the Movies scene, as it made a great
-baseline for the rest of the scenes. Now, I just need videos, and to drop in the new artifacts.
+baseline for the rest of the scenes. Now, I just need to add some text.
 
 Blueprint taken from: https://commons.wikimedia.org/wiki/File:Joy_Oil_gas_station_blueprints.jpg
 Movie Camera taken from: https://free3d.com/3d-model/film-camera-39825.html
